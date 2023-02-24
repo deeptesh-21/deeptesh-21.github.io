@@ -5,9 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Site</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            position: relative;
+            top: 20px;
+            background-color: orange;
+            width: 95%;
+            height: 60px;
+            margin: 0 auto;
+        }
+
+        .container > .navbar {
+            position: absolute;
+            display: flex;
+            background-color: pink;
+            list-style: none;
+            margin: auto 0;
+            width: 50%;
+            height: 50%;
+            right: 0;
+        }
+
+        .container > .navbar > .items {
+            background-color: yellow;
+            width: 20%;
+            text-align: center;
+            height: inherit;
+            justify-content: space-evenly;
+        }        
+
+        a {
+            position: absolute;
+            text-decoration: none;
+            background-color: red;
+            height: inherit;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to my GitHUb pages</h1>
-    <h2>This is second heading</h2>
+    <div class="container">
+        <ul class="navbar">
+            <li class="items"><a href="">Home</a></li>
+            <li class="items"><a href="">Menu</a></li>
+            <li class="items"><a href="">About Us</a></li>
+            <li class="items"><a href="">Contact Us</a></li>
+        </ul>
+    </div>
 </body>
 </html>
